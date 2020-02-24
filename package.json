@@ -1,0 +1,62 @@
+{
+  "name": "react-open-trials",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.2.0",
+    "@material-ui/icons": "^4.2.0",
+    "apollo-boost": "^0.4.3",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "graphql": "^14.3.1",
+    "history": "^4.9.0",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-test-renderer": "^16.8.6",
+    "typeface-roboto": "^0.0.54",
+    "waait": "^1.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "coverage": "react-scripts test --env=jsdom --watchAll=false --all --coverage",
+    "eject": "react-scripts eject",
+    "e2e": "cypress run",
+    "cypress:open": "cypress open"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!src/**/*.styles.js",
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/serviceWorker.js"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cypress": "^3.3.2",
+    "cypress-cucumber-preprocessor": "^1.12.0",
+    "eslint-plugin-cypress": "^2.2.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
